@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>🎓 Student Sign-in Portal</title>
+    <style>
+      body{
+        background-color: #ee5522;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body class="bg-warning"> 
+
+      <h1 class="text-dark mx-5" style="font-family: cursive;">SQI Sign-in portal</h1>
+
+      <div id="home" class="container bg-light shadow-lg p-4 col-md-8 col-sm-12 col-lg-7 mt-1 d-inline-block">
+        <input class="d-block w-100 mb-2 h-100 p-3 form-control" type="text" placeholder="Firstname" id="firstname">
+        <input class="d-block w-100 mb-2 h-100 p-3 form-control" type="text" placeholder="Lastname" id="lastname">
+        <input class="d-block w-100 mb-2 h-100 p-3 form-control" type="text" placeholder="E-mail" id="email">
+        <input class="d-block w-100 mb-2 h-100 p-3 form-control" type="text" placeholder="username" id="username">
+        <input class="d-block w-100 mb-2 h-100 p-3 form-control" type="password" placeholder="password" id="password">
+        <button class="btn btn-primary w-75 m-auto d-block mt-4" onclick="addStudent()" id="btn-add">Add Student</button>
+        <button class="btn btn-warning w-50 m-auto d-block mt-4" onclick="viewStudent()" id="btn-view">View Students</button>
+        <p class=" text-center text-dark">Already have an account...? <a href="/login.html" class="link link-secondary">login</a> </p>
+        <button class="btn btn-secondary w-50 m-auto d-block mt-2" onclick="search()">Search</button>
+      </div>
+    <!-- <div id="" class="alert alert-secondary"></div> --> 
+    <div id="boardSec"></div>
+
+    <script src="index.js"></script>
+    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

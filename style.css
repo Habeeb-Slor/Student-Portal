@@ -1,0 +1,17 @@
+body{
+  overflow-x: hidden;
+}
+#home{
+  margin: auto !important;
+  margin-left: 20% !important;
+}
+@media all and (max-width:768px) {
+  body{
+    overflow-x: hidden !important;
+  }
+  #home{
+    overflow-x: hidden !important;
+    margin: auto !important;
+    /* margin-left: 20% !important; */
+  }
+}
